@@ -37,6 +37,26 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "image_CyngTJ": {
+          "type": "image",
+          "settings": {
+            "position": "1",
+            "image": "shopify:\/\/shop_images\/Fluro_UVTee.png",
+            "aspect_ratio": 1.5,
+            "wide_image": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "title": "",
+            "link_text": "",
+            "link": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_CyngTJ"
+      ],
       "settings": {
         "header_sticky": true,
         "header_style": "logo_beside",
@@ -48,8 +68,8 @@
         "logo": "{{ shop.brand.logo }}",
         "logo_max_limit": 220,
         "logo_max_limit_mobile": 120,
-        "main_menu_linklist": "new-main-menu",
-        "mobile_menu_linklist": "new-main-menu",
+        "main_menu_linklist": "test",
+        "mobile_menu_linklist": "test",
         "enable_search": true,
         "show_social_icons": true,
         "button_text": "",

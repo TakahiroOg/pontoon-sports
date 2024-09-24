@@ -18,7 +18,7 @@
             "button_size": "btn--small",
             "button_style": "btn--outline",
             "show_social_links": true,
-            "column_width": 25
+            "column_width": 20
           }
         },
         "linklist_Qgmymi": {
@@ -35,7 +35,7 @@
           "settings": {
             "linklist": "help",
             "title": "Help",
-            "column_width": 25,
+            "column_width": 20,
             "enable_accordion": false
           }
         },
