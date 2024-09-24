@@ -1,0 +1,172 @@
+{%- capture html -%}
+<div style="min-height:100vh">
+  <div class="kit-image-banner" style="min-height:10vh">
+    <img src="" alt="" style="width:100%; height: auto;aspect-ratio: auto 3/1; object-fit:contain; display:none" />
+    <div style="aspect-ratio: 3/1;" class="image-placeholder"></div>
+  </div>
+  <div class="container">
+    <p class="heading-text">Customise Your Vision. Pick a Product and Experiment with Styling and Design Alternatives</p>
+    <div class="row" id="kitDesignerProduct"></div>
+  </div>
+  
+  <div id="kitDesignerDesignService" class="mb-20 commonwraps kitDesignerBackgroundwraper">
+    <div class="commonPadding"></div>
+  </div>
+    <div id="kitDesignerVideo" class="commonwraps">
+  <div class="commonPadding"></div>
+    </div>
+    <div id="kitDesignerGraphic" class="mb-20 commonwraps kitDesignerBackgroundwraper">
+      <div class="commonPadding"></div>
+    </div>
+    <div id="kitDesignerNote" class="mb-20 commonwraps">
+      <div class="commonPadding"></div>
+    </div>
+  
+  <div id="kitDesignerFAQ" class="mb-20 kitDesignerFAQwraper">
+    <div class="commonPadding"></div>
+  </div>
+</div>
+
+{% render 'landing-page-css' %}
+{% endcapture %}
+<script>
+  // Redirect to last visited kit designer page if user lands on /collections/kit-designer
+
+  if (window.location.href.endsWith('/collections/{{collection.handle}}')) {
+    const tag = window.sessionStorage.getItem('last_visited_kd_tag');
+    window.location.href = tag ? `/collections/{{collection.handle}}/${tag}` : '/';
+  } else {
+    const url = window.location.href.split('/');
+    const selectedTag = url[url.length - 1];
+    window.sessionStorage.setItem('last_visited_kd_tag', selectedTag);
+  }
+</script>
+{{ html | strip_newlines | replace: '	', '' | replace: '    ', '' | replace: '  ', ' ' }}
+
+<script>
+  function imgError(image) {
+    image.onerror = "";
+    image.src = "https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg";
+  }
+  
+  $.get('{{ settings.backend_api_url }}/kit-designer/landing-pages?url={{ collection.handle }}/{{request.path | split: "/" | last }}', function (result) {
+    var datas = result.data;
+
+    $('.kit-image-banner').find('img').attr('src', datas.header_image_link).css('display', 'block');
+    $('.kit-image-banner').find('div').css('display', 'none');
+    
+
+    var htmlProduct = '';
+
+    {% assign currency_code = cart.currency.iso_code%}
+
+    for (const i in datas.design_product) {
+      htmlProduct += `
+        <div class="product-item">
+        <a href="{{ request.origin }}/collections/design-product/#${datas.design_product[i].id}">
+          <div style="height: 300px;display: flex;align-items: center;justify-content:center"> <img 
+            src="{{ settings.backend_base_url }}/${datas.design_product[i].design_thumbnail}" 
+            onerror="imgError(this);" 
+            style="max-height: 300px; margin-bottom: 15px;"
+          /></div>
+          
+            <p class="h6 mb-0">${datas.design_product[i].design_pro_name}</p>
+            <p>${'{{ currency_code }}' == 'EUR' ? '€' : ('{{ currency_code }}' == 'GBP' ? '£' : '$')}${datas.design_product[i].s_price_{{ currency_code | downcase }} ? datas.design_product[i].s_price_{{ currency_code | downcase }} : 0} {{ currency_code }} each for ${datas.design_product[i].s_minimum ? datas.design_product[i].s_minimum : 0}+</p>
+            <p class="text-danger">Customise it ></p>
+          </a>
+        </div>
+      `;
+    }
+
+    $('#kitDesignerProduct').html(htmlProduct);
+
+    if (datas.title) {
+      $('#kitDesignerTitle').text(datas.title);
+    }
+
+    var htmlVideo = '';
+
+    if (datas.video_link_1) {
+      htmlVideo += `
+        <div class="video-row">
+          <div class="col-md-6">
+            <p class="h6">${datas.video_description_1}</p>
+          </div>
+          <div class="col-md-6">
+            <iframe frameborder="0" height="315" src="${datas.video_link_1}?&autoplay=1&mute=1&loop=1&rel=0" width="560" allow="autoplay; fullscreen" ></iframe>
+          </div>
+        </div>
+      `;
+    }
+
+    if (datas.video_link_2) {
+      htmlVideo += `
+        <div class="video-row">
+          <div class="col-md-6">
+            <iframe frameborder="0" height="315" src="${datas.video_link_2}?&autoplay=1&mute=1&loop=1&rel=0" width="560" allow="autoplay; fullscreen"></iframe>
+          </div>
+          <div class="col-md-6">
+            <p class="h6">${datas.video_description_2}</p>
+          </div>
+        </div>
+      `;
+    }
+
+    if (datas.video_description_2) {
+    $('#kitDesignerDesignService div').html(datas.video_description_2);
+    }
+
+    $('#kitDesignerVideo div').html(htmlVideo);
+
+    $('#kitDesignerGraphic div').html(datas.graphic);
+
+    $('#kitDesignerNote div').html(datas.note);
+    
+    $('#kitDesignerFAQ div').html(datas.faq_content);
+  });
+
+function expandContent() {
+    var content = document.getElementById("noteContent");
+    var button = document.getElementById("expand-button");
+    content.style.maxHeight = content.style.maxHeight == "none" ? "7em" : "none"; // Expand the content
+    //button.style.display = "none"; // Hide the expand button
+    button.innerText = content.style.maxHeight == "none" ? 'Click to Reduce' : 'Click to Expand';
+}
+
+
+// FAQ Related script
+  function handleFaqInteraction() {
+    
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    const faqAnswers = document.querySelectorAll('.faq-answer');
+  
+    faqQuestions.forEach((question, index) => {
+      const plusIcon = question.querySelector('.plus-icon');
+      plusIcon.addEventListener('click', () => {
+        faqAnswers[index].classList.toggle('active');
+      });
+    });
+
+  }
+  
+  const intervalHolder = setInterval(function () {
+  const specificElement = document.querySelector('.faq-container');
+
+    if(specificElement != null){
+
+      // Check if content exceeds 6 lines, and if so, show the expand button
+        var content = document.getElementById("noteContent");
+        var expandButton = document.getElementById("expand-button");
+
+        //content.addEventListener("transitionend", function () {
+            if (content.clientHeight < content.scrollHeight) {
+                expandButton.style.display = "inline-block";
+            }
+        //});
+      handleFaqInteraction();
+      clearInterval(intervalHolder);
+    }
+    
+  }, 1000);
+  // FAQ Related script
+</script>

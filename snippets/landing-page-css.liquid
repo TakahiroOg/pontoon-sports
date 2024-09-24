@@ -1,0 +1,171 @@
+<style>
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .text-danger {
+    color: #dc3545;
+  }
+
+  .video-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px; /* mb-10 */
+  }
+
+  .col-md-6 {
+    width: 100%; /* Full width on small screens */
+  }
+
+  @media (min-width: 768px) {
+    .col-md-6 {
+      width: 50%; /* 50% width on medium screens and larger */
+    }
+  }
+
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+
+  .product-item {
+    width: 50%;
+    margin-bottom: 48px; /* mb-5 */
+    text-align: center; /* text-center */
+    display: flex; /* d-flex */
+    flex-direction: column; /* flex-column */
+    justify-content: space-between; /* justify-content-between */
+    align-items: center; /* align-items-center */
+  }
+
+  .heading-text {
+    text-align: center;
+    margin: 2rem 0 4rem 0;
+  }
+
+  @media (min-width: 992px) {
+    .product-item {
+      width: 25%; /* col-lg-3 */
+    }
+  }
+  .commonPadding {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .commonwraps {
+    margin-top: 30px;
+    /*padding-bottom: 20px;*/
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+  .kitDesignerBackgroundwraper {
+    background-color: #fafafb;
+  }
+
+  .kitDesignerFAQwraper {
+    font-family: initial !important;
+    background-color: #fafafb;
+    margin-bottom: unset !important;
+    padding-bottom: 20px;
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+
+  .faq_block h3 {
+    font-weight: 500;
+    font-size: 38px;
+    padding-top: 63px;
+    margin: 0;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 50px;
+    padding-top: 111px;
+  }
+
+  .faq_block .subtitle {
+    text-align: center;
+    margin: 0px auto;
+    max-width: 563px;
+    color: #a1a1a1;
+    font-size: 18px;
+    padding-top: 10px;
+    line-height: 27px;
+    padding-bottom: 50px;
+  }
+
+  .faq_block .faq_list {
+    padding-top: 33px;
+    width: 1030px;
+    max-width: 100%;
+    margin: 0px auto;
+  }
+
+  .faq_block .faq_list .collapsible {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    padding-left: 30px;
+    padding-right: 55px;
+    margin-bottom: 18px;
+    background: url('https://cdn.shopify.com/s/files/1/0658/3884/2108/files/arrow_open.png?v=1674735351') 98% 35px
+      no-repeat;
+    background-color: #fafbfd;
+    cursor: pointer;
+  }
+
+  .faq_block .faq_list .collapsible .title {
+    line-height: 45px;
+    padding: 20px 0;
+    font-size: 22px;
+    color: #464644;
+    font-weight: normal;
+  }
+
+  .faq_block .faq_list .collapsible .content {
+    display: none;
+    overflow: hidden;
+    background-color: #ffffff;
+    padding-bottom: 60px;
+    margin-top: -10px;
+    line-height: 26px;
+  }
+
+  .faq_block .faq_list .collapsible .content p {
+    margin: 0px;
+  }
+
+  .faq_block .faq_list .collapsible.active .title {
+    color: #4dd374;
+  }
+
+  .faq_block .faq_list .collapsible.active .content {
+    display: block;
+  }
+  .faq_block .faq_list .collapsible.active {
+    background: url('https://cdn.shopify.com/s/files/1/0658/3884/2108/files/arrow_close.png?v=1674735351') 98% 40px
+      no-repeat;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 30px 0px rgb(34 60 80 / 20%);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 30px 0px rgb(34 60 80 / 20%);
+  }
+
+  /* Media query for mobile devices */
+  @media (max-width: 600px) {
+    .commonwraps {
+      padding-right: unset;
+      padding-left: unset;
+    }
+    .commonPadding {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    #kitDesignerProduct img {
+      /*height: 160px;*/
+    }
+    .kitDesignerFAQwraper {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  }
+</style>

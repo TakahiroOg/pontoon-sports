@@ -1,0 +1,115 @@
+<style>
+  #designProduct {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 8;
+  }
+</style>
+
+{%- capture html -%}
+  <iframe id="designProduct" src="" scrolling="no" style="min-height: 100vh" frameborder="0"></iframe>
+  {% endcapture %}
+
+{{ html | strip_newlines | replace: '	', '' | replace: '    ', '' | replace: '  ', ' ' }}
+
+<script>
+  // Redirect to last visited kit designer page if user lands on /collections/kit-designer
+
+  if (window.location.href.endsWith('/collections/design-product')) {
+    const hashForDpId = window.sessionStorage.getItem('last_visited_dp_id');
+    window.location.href = hashForDpId ? `/collections/design-product/${hashForDpId}` : '/';
+  } else {
+    const url = window.location.href.split('/');
+    const selectedTag = url[url.length - 1];
+    window.sessionStorage.setItem('last_visited_dp_id', selectedTag);
+  }
+
+  let urls = window.location.href.split('/');
+
+  let id = urls[urls.length - 1].replace('#', '');
+
+  let shopify_customer_id = __st.cid;
+
+  let currentSessionId = window.localStorage.getItem('kd_session_id');
+  if (!currentSessionId && !shopify_customer_id) {
+    currentSessionId = Math.random().toString(36).slice(2, 12);
+    window.localStorage.setItem('kd_session_id', currentSessionId);
+  }
+
+  const params = `?productDesignId=${id}&cid=${shopify_customer_id}&sid=${
+    shopify_customer_id ? null : currentSessionId
+  }&currency={{cart.currency.iso_code}}`;
+
+  $('#designProduct').attr('src', '{{ settings.kit_designer_frontend_url }}' + params);
+
+  window.addEventListener('load', () => {
+    const iframe = document.querySelector('#designProduct');
+    iframe.contentWindow.postMessage({ type: 'ga-cross-domain-setup', data: { clientId: gcid, sessionId: gsid } }, '*');
+
+    console.log({ clientId: gcid, sessionId: gsid });
+  });
+
+  window.addEventListener(
+    'message',
+    function (event) {
+      if (Number.isInteger(event.data)) {
+        $('#designProduct').height(event.data);
+      }
+      try {
+        handleKitDesignerMessageFromIframe(event.data);
+      } catch (e) {
+        console.error(e.message);
+      }
+    },
+    false
+  );
+
+  function handleKitDesignerMessageFromIframe(data) {
+    if (typeof data !== 'string') return;
+
+    const message = JSON.parse(event.data);
+    if (message && message.action) {
+      switch (message.action) {
+        case 'sendSelectedPattern':
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          window.pattern = message.content;
+          document.title = `${window.pattern.patternName} / ${window.pattern.styleName} | {{shop.name}}`;
+          break;
+        case 'sendDesignDetails':
+          window.designProduct = message.content;
+          $('.breadcrumb-list li:last-child span').text(window.designProduct.design_pro_name);
+          document.title = `${window.designProduct.design_pro_name} | {{shop.name}}`;
+          break;
+        default:
+          console.log('Unknown message action:', message.action);
+      }
+    }
+  }
+
+  var eventMethod = window.addEventListener ? 'addEventListener' : 'attachEvent';
+  var eventer = window[eventMethod];
+  var messageEvent = eventMethod === 'attachEvent' ? 'onmessage' : 'message';
+  eventer(messageEvent, function (e) {
+    if (e.data?.action == 'updateCart') {
+      let formData = e.data?.list;
+
+      fetch(window.Shopify.routes.root + 'cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+        .then((response) => {
+          var iframe = document.getElementById('designProduct');
+          iframe.contentWindow.postMessage({ action: 'productAddedToCart' }, '*');
+          window.Shopify.getCart();
+        })
+        .catch((error) => {
+          iframe.contentWindow.postMessage({ action: 'ErrorAddedToCart' }, '*');
+          console.error('Error:', error);
+        });
+    }
+  });
+</script>

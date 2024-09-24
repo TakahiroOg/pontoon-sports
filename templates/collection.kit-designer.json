@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "collection-kit-designer-template",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

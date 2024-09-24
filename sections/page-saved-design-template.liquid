@@ -1,0 +1,193 @@
+{%- capture html -%}
+<iframe id="designProduct" src="" scrolling="no" frameborder="0"></iframe>
+<div id="listContainer" class="custom-container">
+    <div class="row">
+      <div class="col-12">
+        <div id="savedDesigns" class="row">
+          <div class="d-flex-center" style="height: 40vh;width: 100%;">
+            <i class="fa fa-spinner fa-spin" style="font-size:4rem"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 custom-lg-3">
+      </div>
+    </div>
+  </div>
+  
+{% endcapture %}
+
+{{ html | strip_newlines | replace: '	', '' | replace: '    ', '' | replace: '  ', ' ' }}
+
+<style>
+  #designProduct {
+    display: none;
+    width: 100%;
+    margin-top: -60px;
+    position: relative;
+    z-index: 8;
+  }
+
+  #listContainer {
+    width: 100%;
+    padding-top: 48px; /* py-5 */
+    padding-bottom: 48px; /* py-5 */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+
+  .d-flex-center {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .d-block {
+    display: block;
+  }
+
+  .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .mt-4 {
+    margin-top: 1.5rem;
+  }
+</style>
+
+<script>  
+(function () {
+  const customerId = __st.cid;
+  const sessionId = window.localStorage.getItem('kd_session_id')
+
+  const emptyHtml = `<div class="col-12 d-flex-center"> 
+          <div style="max-width: 600px">
+            <img src="{{ 'empty.svg' | asset_url }}" alt="Empty Image" width="100%" height="100%">
+            <h3 class="mt-4 text-center">It's empty here, try our <a class="text-primary" href="/pages/kit-designer">Kit Designer</a> and save some designs!</h2>
+            {% unless customer %}
+              <span class="text-center d-block mb-2">OR</span>
+              <h5 class="text-center"><a class="text-primary" href="/account/login">Login</a> to your account to access your saved designs.</h5>  
+            {% endunless %}
+          </div>
+        </div>`
+  
+  if (customerId || sessionId) {
+      fetchSavedDesigns()
+  } else {
+      $('#savedDesigns').html(emptyHtml)
+  }
+
+  function fetchSavedDesigns() {
+    $.get(`{{ settings.backend_api_url }}/save-design-v2/index/${customerId || sessionId}`, function (result) {
+      var html = ``;
+      
+      for (i = 0; i < result.data.length; i++) {
+        html += `
+          <div class="col-6 col-lg-3 mb-5 text-center d-flex flex-column justify-content-between align-items-center" id='item-${result.data[i].uuid}''>
+            <div>
+              <div class="item-design">
+                <a href="#" onClick="handleClickEdit('${result.data[i].uuid}', ${result.data[i].design_product_id}, ${result.data[i].pattern_style_id}, ${result.data[i].gender_id})">
+                  <div style="max-height: 400px; overflow: hidden; display: flex; align-items: center;">
+                    <img src="${result.data[i].design_thumbnail}"  />
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex justify-content-between px-5 py-3">
+                <a style="padding-right: 10px;" href="#${result.data[i].uuid}" onClick="handleClickEdit('${result.data[i].uuid}', ${result.data[i].design_product_id}, ${result.data[i].pattern_style_id}, ${result.data[i].gender_id})"><ins>Edit</ins></a>
+                
+                <a onClick="deleteSavedDesign('${result.data[i].uuid}')" ><ins>Delete</ins></a>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+  
+      if (result.data.length > 0) {
+        $('#savedDesigns').html(html);
+      } else {
+        $('#savedDesigns').html(emptyHtml)
+      }
+    });
+  }
+  
+ 
+  
+  const deleteSavedDesign = async (uuid) => {
+    try {
+        const response = await fetch('{{ settings.backend_api_url }}/save-design/' + uuid, {
+              method: 'DELETE',
+              headers: {
+                  'Content-type': 'application/json'
+              }
+          });
+      const deletedData = await response.json();
+      fetchSavedDesigns()
+
+    } catch (error) {
+      console.error('SHOPIFY:DELETE:ERROR:', error)
+    }
+    
+  }
+})()
+
+const handleClickEdit = (id, product, pattern, gender) => {
+    const currentGender = gender === 1 ? 'MEN' : 'WOMEN'
+    const currency = "{{cart.currency.iso_code}}"
+    const sessionId = window.localStorage.getItem('kd_session_id')
+
+    const customerId = {{ customer.id | json }}
+    $('#designProduct').attr('src', `{{ settings.kit_designer_frontend_url }}?productDesignId=${product}&patternStyleId=${pattern}&gender=${currentGender}&savedDesignID=${id}&cid=${__st.cid}&sid=${customerId ? 'null' : sessionId}&currency=${currency}`);
+    $('#designProduct').css('display', 'block');
+    $('#listContainer').css('display', 'none');
+
+      window.addEventListener('message', function (event) {
+    $('#designProduct').height(event.data);
+  }, false);
+}
+  
+  var eventMethod = window.addEventListener
+     ? "addEventListener"
+     : "attachEvent";
+     var eventer = window[eventMethod];
+     var messageEvent = eventMethod === "attachEvent"
+     ? "onmessage"
+     : "message";
+     eventer(messageEvent, function (e) {
+     
+     if(e.data?.action == 'updateCart')
+     {
+       
+      let formData = e.data?.list;
+       
+      fetch(window.Shopify.routes.root + 'cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
+      .then(response => {
+        var iframe = document.getElementById('designProduct');
+        iframe.contentWindow.postMessage({ action: 'productAddedToCart' }, '*');
+        window.Shopify.getCart()
+      })
+      .catch((error) => {
+        iframe.contentWindow.postMessage({ action: 'ErrorAddedToCart' }, '*');
+        console.error('Error:', error);
+      });
+       
+     }
+     });
+</script>

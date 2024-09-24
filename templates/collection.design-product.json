@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "collection-design-product-template",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

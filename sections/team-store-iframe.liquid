@@ -1,0 +1,145 @@
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when 'iframe' -%}
+      <iframe id="teamStore" src="" scrolling="no" frameborder="0" style="min-height:70vh"></iframe>
+
+      <script>
+          $(document).ready(function(e){
+            var url = new URL(location.href);
+            console.log('url-', url);
+            var params = new URLSearchParams(url.search);
+            console.log('params-', params);
+            var ownerCode = params.get('owner_code')
+            var inviteCode = params.get('invite')
+  
+            var customerId = {{ customer.id | json }}
+  
+            const sessionId = window.localStorage.getItem('kd_session_id')
+            var getParamId = params.get('id');
+            var getCurrencyData = {{cart.currency.iso_code | json}};
+  
+            if (getParamId) {
+              $('#teamStore').attr( 'src','{{ block.settings.iframe }}/products'+ `/${getParamId}/${getCurrencyData}?owner_code=${ownerCode}&invite_code=${inviteCode}&cid=${customerId}&sid=${customerId ? 'null' : sessionId}`);  
+            } else {
+              $('#teamStore').attr( 'src','{{ block.settings.iframe }}/null/'+ `${getCurrencyData}?owner_code=${ownerCode}&invite_code=${inviteCode}&cid=${customerId}&sid=${customerId ? 'null' : sessionId}` );  
+            }
+  
+              window.addEventListener('message', function (event) {
+                $('#teamStore').height(event.data);
+              }, false);
+  
+              var eventMethod = window.addEventListener
+                 ? "addEventListener"
+                 : "attachEvent";
+                 var eventer = window[eventMethod];
+                 var messageEvent = eventMethod === "attachEvent"
+                 ? "onmessage"
+                 : "message";
+                 eventer(messageEvent, function (e) {
+  
+                 if(e.data?.action == 'updateCart')
+                 {
+  
+                  let formData = e.data?.list;
+  
+                  fetch(window.Shopify.routes.root + 'cart/add.js', {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                  })
+                  .then(response => {
+                    window.Shopify.getCart()
+                  })
+                  .catch((error) => {
+                    console.error('Error:', error);
+                  });
+  
+                 }
+                 });
+  
+          });
+      </script>
+  {%- endcase -%}
+{%- endfor -%}
+
+{% schema %}
+{
+  "name": "Team Store iFrame",
+  "class": "section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "iframe",
+      "name": "iFrame",
+      "settings": [
+        {
+          "type": "text",
+          "id": "iframe",
+          "label": "iFrame Link"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 1,
+  "presets": [
+    {
+      "name": "Team Store iFrame",
+      "blocks": [
+        {
+          "type": "iframe"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+  #teamStore {
+    display: block;
+    width: 100%;
+  }
+
+  @media (max-width: 991px) {
+    #teamStore {
+      position: relative;
+    }
+  }
+{% endstylesheet %}
+
+{% javascript %}
+  window.addEventListener(
+    'message',
+    function (event) {
+      $('#teamStore').height(event.data);
+    },
+    false
+  );
+
+  var eventMethod = window.addEventListener ? 'addEventListener' : 'attachEvent';
+  var eventer = window[eventMethod];
+  var messageEvent = eventMethod === 'attachEvent' ? 'onmessage' : 'message';
+  eventer(messageEvent, function (e) {
+    if (e.data?.action == 'updateCart') {
+      let formData = e.data?.list;
+
+      console.log('LIST:', formData);
+
+      fetch(window.Shopify.routes.root + 'cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+        .then((response) => {
+          window.Shopify.getCart();
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+    }
+  });
+{% endjavascript %}

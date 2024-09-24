@@ -1,0 +1,448 @@
+{
+  "sections": {
+    "section_video_XFxAcz": {
+      "type": "section-video",
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/pontoon-homepage-optimized1.mp4",
+        "show_video_popup": false,
+        "video_popup_social": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "desktop_height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "width": "wrapper--full",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "title": "",
+        "heading_size": 8,
+        "description": "",
+        "text_size": 3,
+        "flex_align": "align--middle-center",
+        "bg_color": "",
+        "color": "#ffffff",
+        "link_text": "",
+        "link": "",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "logos": {
+      "type": "section-press-logos",
+      "blocks": {
+        "logos-0": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/KitDesignerLogo.svg",
+            "logo_width": 100,
+            "link": "https:\/\/pontoonsports.com\/pages\/kit-designer",
+            "heading": "The Pontoon Kit Designer offers a seamless customisation experience with flexible order options, making it easy to personalise existing designs. Enjoy fast turnaround times and flexible design options.",
+            "heading_size": 3
+          }
+        },
+        "logos-1": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Team_OrderLogo_a03bac22-09d3-4859-a477-5e5fab07ebd8.svg",
+            "logo_width": 100,
+            "link": "https:\/\/pontoonsports.com\/pages\/team",
+            "heading": "Create a custom team store online — let your members order sports uniforms online, as needed, anytime.",
+            "heading_size": 3
+          }
+        },
+        "logos-2": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/ShopOnlineLogo.svg",
+            "logo_width": 100,
+            "link": "shopify:\/\/collections\/mens",
+            "heading": "A dedicated online shop providing high-performance sports apparel designed for any athlete who value quality and performance.",
+            "heading_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "logos-0",
+        "logos-1",
+        "logos-2"
+      ],
+      "settings": {
+        "title": "Our programs",
+        "enable_heading_slider": true,
+        "text_style": "font-body",
+        "logo_opacity": 60,
+        "bg_color": "#ffffff",
+        "color": "",
+        "padding_top": 30,
+        "padding_bottom": 30
+      }
+    },
+    "image-with-text": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ladies_Strappy_Suit_d3301bc8-221e-4127-97cd-5612d9ca013e.png",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "title": "",
+            "heading_size": 3,
+            "description": "Custom Swimwear ->",
+            "text_size": 3,
+            "flex_align": "align--bottom-left",
+            "bg_color": "",
+            "color": "#535353",
+            "link_text": "",
+            "link": "https:\/\/pontoonsports.com\/collections\/kit-designer\/custom-swimwear",
+            "button_type": "btn--black",
+            "button_size": "btn--small",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "subheading": "Pontoon Teamwear",
+            "subheading_size": 3,
+            "title": "Sports Apparel For Your Club, School Or Team",
+            "heading_size": 6,
+            "text": "<p>Pontoon has been designing, manufacturing, and supplying high-performance sportswear and uniforms to clubs, schools, universities, and businesses since 2006. Pontoon continues to innovate, providing custom sportswear that is accessible to athletes of all levels and abilities.<br\/><br\/>Click here for our full range -&gt;<\/p>",
+            "text_size": 3,
+            "button_text": "",
+            "button_url": "https:\/\/pontoonsports.com\/pages\/kit-designer",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false,
+            "show_social_links": false,
+            "text_columns": 1,
+            "align_text": "text-left",
+            "bg_color": "#222222",
+            "color": "#e1e1e1"
+          }
+        }
+      },
+      "block_order": [
+        "image",
+        "text"
+      ],
+      "settings": {
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full-padded",
+        "borders": false,
+        "gutters": false,
+        "reverse_blocks": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_content_CqYgMB": {
+      "type": "section-custom-content",
+      "blocks": {
+        "image_4VUcjd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/GirliNWoods.png",
+            "overlay_opacity": 0,
+            "overlay_color": "#000",
+            "show_overlay_text": false,
+            "title": "",
+            "heading_size": 7,
+            "description": "Fast Turn Around Kit ->",
+            "text_size": 3,
+            "flex_align": "align--bottom-left",
+            "bg_color": "",
+            "color": "#FFFFFF",
+            "link_text": "",
+            "link": "https:\/\/pontoonsports.com\/collections\/\/kit-designer\/semi-spec",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "image_UczadU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Blue_Strappy_1024x1024_ins.jpg",
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "title": "",
+            "heading_size": 7,
+            "description": "Custom Rowing Kit ->",
+            "text_size": 3,
+            "flex_align": "align--bottom-right",
+            "bg_color": "",
+            "color": "#535353",
+            "link_text": "",
+            "link": "https:\/\/Alhttps:\/\/pontoonsports.com\/collections\/kit-designer\/rowing-clothingl Products",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "image_4VUcjd",
+        "image_UczadU"
+      ],
+      "settings": {
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full-padded",
+        "borders": false,
+        "gutters": false,
+        "reverse_blocks": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "tabs": {
+      "type": "section-tab-collections",
+      "blocks": {
+        "tabs-0": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "featured_collection": "mens",
+            "show_image": true,
+            "align_with_product_images": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "color": "#ffffff",
+            "link_text": "View products",
+            "link": "shopify:\/\/collections\/mens",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        },
+        "tabs-1": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "featured_collection": "ladies",
+            "show_image": true,
+            "align_with_product_images": false,
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "description": "",
+            "color": "#ffffff",
+            "link_text": "View products",
+            "link": "shopify:\/\/collections\/ladies",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "tabs-0",
+        "tabs-1"
+      ],
+      "settings": {
+        "title": "Shop online",
+        "heading_size": 4,
+        "text": "",
+        "text_size": 3,
+        "layout": "stacked",
+        "show_product_count": false,
+        "layout_desktop": "slider",
+        "layout_mobile": "slider",
+        "product_limit": 7,
+        "grid": 5,
+        "rows": 4,
+        "bg_color": "#ffffff",
+        "color": "#535353",
+        "padding_top": 30,
+        "padding_bottom": 30
+      }
+    },
+    "icons": {
+      "type": "section-text-row",
+      "blocks": {
+        "icon-0": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-shield",
+            "icon_size": 30,
+            "icon_color": "#545454",
+            "title": "Secure transactions",
+            "heading_size": 3,
+            "text": "<p>Transactions are handled with bank-grade security.<\/p><p><\/p>",
+            "text_size": 2
+          }
+        },
+        "icon-1": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-recycle",
+            "icon_size": 30,
+            "icon_color": "#545454",
+            "title": "Simple checkout",
+            "heading_size": 3,
+            "text": "<p>Our secure checkout is quick and easy to use.<\/p><p><\/p>",
+            "text_size": 2
+          }
+        },
+        "icon-2": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "icon-chat",
+            "icon_size": 30,
+            "icon_color": "#545454",
+            "title": "Get in touch",
+            "heading_size": 3,
+            "text": "<p>Have questions? Get in touch with us at any time.<\/p><p><\/p>",
+            "text_size": 2
+          }
+        }
+      },
+      "block_order": [
+        "icon-0",
+        "icon-1",
+        "icon-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": 3,
+        "layout": "grid",
+        "grid": 3,
+        "align_heading": "text-left",
+        "align_text": "text-center",
+        "icon_alignment": "icon--top",
+        "align_columns": "flex-align-top",
+        "width": "wrapper--full-padded",
+        "bg_color": "#f7f9fa",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "slider"
+      }
+    },
+    "hero": {
+      "type": "section-hero",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "title": "Plastic free",
+            "heading_size": 9
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "description": "Understanding our responsibility",
+            "text_size": 5,
+            "text_style": "font-body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "link_text": "our mission",
+            "link": "shopify:\/\/collections\/all",
+            "button_type": "btn--white",
+            "button_size": "",
+            "button_style": "btn--outline",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "height": "four-fifty-height-hero",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Turtle_swimming_in_a_blue_ocean_1.png",
+        "link": "",
+        "mobile_height": "screen-height-three-quarters--mobile",
+        "flex_align_desktop": "align--middle-left-desktop",
+        "flex_align_mobile": "align--middle-left-mobile",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#ffffff",
+        "show_placeholder": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "product-with-image": {
+      "type": "section-custom-content",
+      "blocks": {
+        "product": {
+          "type": "product",
+          "settings": {
+            "title": "Sell with style",
+            "product": "",
+            "bg_color": "#ffffff",
+            "color": ""
+          }
+        },
+        "image": {
+          "type": "image",
+          "settings": {
+            "overlay_opacity": 0,
+            "overlay_color": "#000000",
+            "show_overlay_text": false,
+            "title": "Commerce first",
+            "heading_size": 7,
+            "description": "Focus on your products with innovative sections focused on selling",
+            "text_size": 3,
+            "flex_align": "align--middle-center",
+            "bg_color": "",
+            "color": "#ffffff",
+            "link_text": "",
+            "link": "shopify:\/\/collections\/all",
+            "button_type": "btn--primary",
+            "button_size": "",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "product",
+        "image"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "screen-height-one-half",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper--full-padded",
+        "borders": false,
+        "gutters": false,
+        "reverse_blocks": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "section_video_XFxAcz",
+    "logos",
+    "image-with-text",
+    "section_custom_content_CqYgMB",
+    "tabs",
+    "icons",
+    "hero",
+    "product-with-image"
+  ]
+}

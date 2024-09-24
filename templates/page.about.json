@@ -1,0 +1,263 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "subheading_size": 3,
+        "show_title": true,
+        "heading_size": 8,
+        "show_content": true,
+        "text_size": 4,
+        "align_text": "text-left",
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "double-1": {
+      "type": "section-double",
+      "blocks": {
+        "heading-1-1": {
+          "type": "heading",
+          "settings": {
+            "title": "About Us",
+            "text_size": 5,
+            "padding_bottom": 16
+          }
+        },
+        "text-1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are dedicated to designing and delivering high-performance custom sportswear that empowers athletes of all levels to express their individuality and achieve their best.<\/p><p> Since 2006, we’ve partnered with clubs, schools, and university colleges to create premium sports uniforms and activewear that combine cutting-edge design with superior functionality. <\/p><p>Our platform offers seamless customisation options, allowing teams to personalise their gear with ease, whether it’s for fully custom or pre-designed items. With a focus on quality, innovation, and accessibility, Pontoon continues to supply technical, durable sportswear to all athletes, helping them excel on and off the field.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 30
+          }
+        }
+      },
+      "block_order": [
+        "heading-1-1",
+        "text-1-1"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "sixty-fifty-height-hero",
+        "mobile_height": "four-fifty-height-hero--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/team_sports_3bd05a45-2de1-459f-bda0-570947c90227.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "reverse_blocks": false,
+        "bg_color": "",
+        "color": "",
+        "show_placeholder": true,
+        "padding_top": 0,
+        "padding_bottom": 50
+      }
+    },
+    "section_press_logos_GgjiFe": {
+      "type": "section-press-logos",
+      "blocks": {
+        "logo_item_BwBqkN": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/KitDesignerLogo.svg",
+            "logo_width": 100,
+            "link": "",
+            "heading": "The Pontoon Kit Designer offers a seamless customisation experience with flexible order options, making it easy to personalise existing designs. Enjoy fast turnaround times and flexible design options.",
+            "heading_size": 4
+          }
+        },
+        "logo_item_GBrq8f": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Team_OrderLogo_a03bac22-09d3-4859-a477-5e5fab07ebd8.svg",
+            "logo_width": 100,
+            "link": "",
+            "heading": "Create a custom team store online - let your members order sports uniforms online, as needed, anytime.",
+            "heading_size": 4
+          }
+        },
+        "logo_item_aDHGVH": {
+          "type": "logo-item",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/ShopOnlineLogo.svg",
+            "logo_width": 100,
+            "link": "",
+            "heading": "A dedicated online shop providing high-performance sports apparel designed for any athlete who value quality and performance.",
+            "heading_size": 4
+          }
+        }
+      },
+      "block_order": [
+        "logo_item_BwBqkN",
+        "logo_item_GBrq8f",
+        "logo_item_aDHGVH"
+      ],
+      "settings": {
+        "title": "Our site is split into three sections",
+        "enable_heading_slider": true,
+        "text_style": "font-body",
+        "logo_opacity": 60,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "double-2": {
+      "type": "section-double",
+      "blocks": {
+        "heading-2-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Product development is at the heart of everything we do",
+            "text_size": 5,
+            "padding_bottom": 16
+          }
+        },
+        "text-2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our team is constantly researching and refining materials, designs, and technology to ensure we provide athletes with the best possible sportswear. <\/p><p>From moisture-wicking fabrics to ergonomic fits, we focus on performance-enhancing features that cater to the diverse needs of our customers. <\/p><p>We take pride in pushing the boundaries of innovation, ensuring that every piece we create not only meets but exceeds expectations for comfort, durability, and style. This commitment to continuous improvement drives us to deliver sportswear that empowers athletes to perform at their peak.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading-2-1",
+        "text-2-1"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "sixty-fifty-height-hero",
+        "mobile_height": "four-fifty-height-hero--mobile",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/Skype_Picture_2024_04_01T07_46_22_809Z.jpg",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "reverse_blocks": false,
+        "bg_color": "",
+        "color": "",
+        "show_placeholder": true,
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "announcement": {
+      "type": "section-announcement",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Contact Us<\/strong> | email: info@pontoonsports.com<\/p>",
+            "text_style": "font-body",
+            "color": "#222222",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "show_border": false,
+        "layout": "marquee",
+        "slider_speed": 7,
+        "text_alignment": "center",
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "message_spacing": 10,
+        "text_size": 2,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "collections-list": {
+      "type": "section-collections-list",
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "baselayers",
+            "title": ""
+          }
+        },
+        "collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "rowing",
+            "title": ""
+          }
+        },
+        "collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "outerwear",
+            "title": ""
+          }
+        },
+        "collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "active-wear",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection-1",
+        "collection-2",
+        "collection-3",
+        "collection-4"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "button_text": "",
+        "button_url": "shopify:\/\/collections",
+        "button_type": "btn--primary",
+        "button_size": "",
+        "button_style": "btn--solid",
+        "show_arrow": false,
+        "layout": "grid",
+        "aspect_ratio": 1.2,
+        "grid": 4,
+        "layout_mobile": "slider",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 32
+      }
+    },
+    "divider": {
+      "type": "section-divider",
+      "settings": {
+        "show_line": true,
+        "width": "wrapper--full-padded",
+        "border_color": "",
+        "bg_color": "",
+        "padding_top": 31,
+        "padding_bottom": 50
+      }
+    }
+  },
+  "order": [
+    "main",
+    "double-1",
+    "section_press_logos_GgjiFe",
+    "double-2",
+    "announcement",
+    "collections-list",
+    "divider"
+  ]
+}

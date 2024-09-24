@@ -1,0 +1,23 @@
+<script>
+    (function () {
+      const sessionId = window.localStorage.getItem('kd_session_id')
+      const customerId = {{ customer.id | json }}
+      if (customerId && sessionId) {
+          fetch(`{{ settings.admin_link }}/api/v1/accounts/merge-session-to-user`, {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                  session_id: sessionId,
+                  customer_id: customerId
+              }),
+          }).then((response) => {
+              if (response.ok) {
+                  console.log("Merged with", customerId, " and ", sessionId)
+                  window.localStorage.removeItem('kd_session_id')
+              }
+          })
+      }
+    })()
+</script>
