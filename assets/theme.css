@@ -23676,12 +23676,13 @@ body.grid-compact.has-line-design .brick__block__collection .look__slide {
   list-style: none;
   font-size: calc(var(--font-2) * var(--FONT-ADJUST-BODY));
   margin: 0 var(--gap-offset);
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 749px) {
   .supporting-menu__copyright {
     text-align: left;
-    display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     min-width: 100%;
