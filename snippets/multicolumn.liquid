@@ -331,6 +331,11 @@
                     data-aos="hero"
                     data-aos-anchor="{{ animation_anchor }}"
                     data-aos-order="{{ animation_order }}">
+                    {%- if block.settings.text_above_icon != blank -%}
+                      <h2 class="text_above_icon">
+                        {{ block.settings.text_above_icon }}
+                      </h2>
+                    {% endif %}
                     <div class="column__icon {{ block.settings.icon_alignment | default: section.settings.icon_alignment }}" style="{{ icon_style }}">
                       <div class="icon__animated{% if image != blank %} icon__animated--image{% endif %}">
                         {%- liquid

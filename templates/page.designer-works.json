@@ -1,0 +1,388 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "subheading": "",
+        "subheading_size": 3,
+        "show_title": false,
+        "heading_size": 8,
+        "show_content": false,
+        "text_size": 4,
+        "align_text": "text-left",
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 20,
+        "padding_bottom": 50
+      }
+    },
+    "section_rich_text_pUQ33E": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_qeTTP9": {
+          "type": "heading",
+          "settings": {
+            "title": "How The Kit Designer Works",
+            "text_size": 6,
+            "padding_bottom": 16
+          }
+        },
+        "text_KPLgrE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pontoon Brings You The Latest In Innovative Customer Connectivity With Our Online Kit Designer.<br\/>Everything You Need To Organise Your Customised Kit.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_qeTTP9",
+        "text_KPLgrE"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-center",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 60,
+        "padding_bottom": 30
+      }
+    },
+    "section_custom_code_Bcfk9m": {
+      "type": "section-custom-code",
+      "custom_css": [
+        ".html-content-class {text-align: center;}"
+      ],
+      "settings": {
+        "code": "<div class=\"html-content-class\"><iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/J8VpxzOibLw\" title=\"The Pontoon Sports Kit Designer. Learn how to design sports products for your team.\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"><\/iframe><\/div>",
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_multicolumn_wGRNUP": {
+      "type": "section-multicolumn",
+      "blocks": {
+        "icon_FLPNqe": {
+          "type": "icon",
+          "settings": {
+            "column_width": 25,
+            "text_above_icon": "Step 1",
+            "icon_name": "icon-shield",
+            "icon_size": 40,
+            "icon_alignment": "icon--top",
+            "icon_color": "#545454",
+            "image": "shopify:\/\/shop_images\/shirt.png",
+            "title": "Product",
+            "heading_size": 3,
+            "text": "<p>Select your garment style<\/p>",
+            "text_size": 3
+          }
+        },
+        "icon_TnWEpq": {
+          "type": "icon",
+          "settings": {
+            "column_width": 25,
+            "text_above_icon": "Step 2",
+            "icon_name": "icon-shield",
+            "icon_size": 40,
+            "icon_alignment": "icon--top",
+            "icon_color": "#545454",
+            "image": "shopify:\/\/shop_images\/pencil.png",
+            "title": "Design",
+            "heading_size": 3,
+            "text": "<p>Choose a style, then add your colours & logos<\/p>",
+            "text_size": 3
+          }
+        },
+        "icon_JebrtT": {
+          "type": "icon",
+          "settings": {
+            "column_width": 25,
+            "text_above_icon": "Step 3",
+            "icon_name": "icon-shield",
+            "icon_size": 40,
+            "icon_alignment": "icon--top",
+            "icon_color": "#545454",
+            "image": "shopify:\/\/shop_images\/money.png",
+            "title": "Add To Cart",
+            "heading_size": 3,
+            "text": "<p>Add sizes then checkout to confirm order<\/p>",
+            "text_size": 3
+          }
+        },
+        "icon_UUzRrz": {
+          "type": "icon",
+          "settings": {
+            "column_width": 25,
+            "text_above_icon": "Step 4",
+            "icon_name": "icon-shield",
+            "icon_size": 40,
+            "icon_alignment": "icon--top",
+            "icon_color": "#545454",
+            "image": "shopify:\/\/shop_images\/truck.png",
+            "title": "Deliver",
+            "heading_size": 3,
+            "text": "<p>Delivered in 5 weeks - 8 days for rush service<\/p>",
+            "text_size": 3
+          }
+        }
+      },
+      "block_order": [
+        "icon_FLPNqe",
+        "icon_TnWEpq",
+        "icon_JebrtT",
+        "icon_UUzRrz"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": 5,
+        "description": "",
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "align_columns": "flex-align-top",
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "slider"
+      }
+    },
+    "section_rich_text_zUWQYm": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_tPRVrn": {
+          "type": "heading",
+          "settings": {
+            "title": "A Little More About The Kit Designer",
+            "text_size": 6,
+            "padding_bottom": 24
+          }
+        },
+        "text_9pcgEg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Once you have designed your custom apparel using the online Kit Designer, and checked out, one of our customer service specialists will be in contact via e-mail within 1-2 business days. You'll be sent a proof which will need to be approved in order to start production. Please carefully check everything so there are no mistakes on the finial product.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 20
+          }
+        },
+        "text_nw33Vi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>To ensure we do the best possible job for you, we prefer vector artwork created in Adobe Illustrator, Freehand, or Corel Draw. Please also send us a PDF of the final design along with your artwork when using these programs.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 20
+          }
+        },
+        "text_aeA6Jp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>There may be an additional set-up time if we receive files that are not in the correct format as we’ll need to recreate them in a vector format. Most logos are simple and don’t take long to convert and we normally don’t charge for this. The most important thing is to ensure that your image is clear.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 20
+          }
+        },
+        "text_kHqJi3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Please ensure you have the appropriate permission to use the logo you have provided, we may request written confirmation that you are able to use these logos.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 20
+          }
+        },
+        "text_QJxTHC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you require your order for a certain date or event, please ensure you allow enough time. If you are unsure, please contact us and we will do our best to help. Please note that Pontoon will not be held responsible for missing a deadline or event due to an unrealistic ordering and shipping timeframe. See Terms and Conditions.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 20
+          }
+        },
+        "text_WmCprQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you need some inspiration on design there are some great places on the net to help. Sites like <a href=\"https:\/\/dribbble.com\/shots\/popular\/branding\">Dribbble<\/a> and <a href=\"https:\/\/www.behance.net\/galleries\/fashion\/apparel\">Behance<\/a> have tons of ideas.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "heading_tPRVrn",
+        "text_9pcgEg",
+        "text_nw33Vi",
+        "text_aeA6Jp",
+        "text_kHqJi3",
+        "text_QJxTHC",
+        "text_WmCprQ"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-left",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 70
+      }
+    },
+    "section_rich_text_Q9NTgj": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_PQftf8": {
+          "type": "heading",
+          "settings": {
+            "title": "Frequently Asked Questions",
+            "text_size": 6,
+            "padding_bottom": 24
+          }
+        },
+        "text_NQzbfB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Still have questions? Here are some of our most frequently asked questions when using our kit designer.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_PQftf8",
+        "text_NQzbfB"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-left",
+        "overlay_opacity": 0,
+        "overlay_color": "#000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_accordion_group_ew4TDr": {
+      "type": "section-accordion-group",
+      "blocks": {
+        "question_TJqGqt": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "What is the expected delivery time for my order?",
+            "content": "<p>Your garments should be delivered to you approximately 6 weeks from the date of your order. If you need your garments sooner, give us a call and we'll see how we can help.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_Whtady": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "Can I use a design that has been provided by a previous supplier?",
+            "content": "<p>Yes you can, as long as the particular style isn't under copyright we are able to use it.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_hXyka6": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "I have uploaded a logo and there is a white box around it. It is possible to get rid of this?",
+            "content": "<p>Absolutely, if you check the 'Remove Image Background' link before you upload your logo, then this box should magically vanish.<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_xUFgKg": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "When I click 'add to card', the size box reopens with a warning.",
+            "content": "<p>The custom items on our site, like all products on Pontoon carry a minimum of 5 units, in some cases<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_fzhE8X": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "The font isn't quite what I want. And I can't get the text spacing right.",
+            "content": "<p>No problems, most sketches that come to us from the Kit Designer aren't perfect, our artwork team uses these as a starting point to create your own design<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        },
+        "question_mAVUkq": {
+          "type": "question",
+          "settings": {
+            "default_open": false,
+            "title": "My logo won't show up",
+            "content": "<p>The Kit Designer can only recognise .jpegs,.gif. or .png files. If you have a logo in another format, please email it to us and we will apply it for you<\/p>",
+            "show_icon": false,
+            "icon_name": "icon-award",
+            "icon_size": 20,
+            "icon_color": "#545454"
+          }
+        }
+      },
+      "block_order": [
+        "question_TJqGqt",
+        "question_Whtady",
+        "question_hXyka6",
+        "question_xUFgKg",
+        "question_fzhE8X",
+        "question_mAVUkq"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "columns": "1",
+        "bg_color": "",
+        "color": "",
+        "border_color": "",
+        "padding_top": 21,
+        "padding_bottom": 50
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_rich_text_pUQ33E",
+    "section_custom_code_Bcfk9m",
+    "section_multicolumn_wGRNUP",
+    "section_rich_text_zUWQYm",
+    "section_rich_text_Q9NTgj",
+    "section_accordion_group_ew4TDr"
+  ]
+}
