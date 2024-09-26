@@ -51,7 +51,7 @@
         "linklist_4dxfjk": {
           "type": "linklist",
           "settings": {
-            "linklist": "info",
+            "linklist": "info-1",
             "title": "About Us",
             "column_width": 20,
             "enable_accordion": false
