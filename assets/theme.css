@@ -22778,6 +22778,10 @@ body.grid-compact.has-line-design .brick__block__collection .look__slide {
   .brick__block--three-quarters {
     flex: 0 0 65%;
   }
+
+  .brick__block--one-third {
+    flex: 0 0 33%;
+  }
 }
 
 .brick__block--text {

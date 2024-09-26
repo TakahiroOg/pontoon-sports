@@ -1,0 +1,417 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "subheading": "",
+        "subheading_size": 3,
+        "show_title": false,
+        "heading_size": 8,
+        "show_content": false,
+        "text_size": 4,
+        "align_text": "text-left",
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_hero_68BLYM": {
+      "type": "section-hero",
+      "blocks": {
+        "heading_JxFCNe": {
+          "type": "heading",
+          "settings": {
+            "title": "ABOUT US",
+            "heading_size": 8
+          }
+        }
+      },
+      "block_order": [
+        "heading_JxFCNe"
+      ],
+      "settings": {
+        "height": "image-height",
+        "width": "wrapper--full",
+        "image_1": "shopify:\/\/shop_images\/About_us_image.png",
+        "link": "",
+        "mobile_height": "image-height--mobile",
+        "mobile_image": "shopify:\/\/shop_images\/About_us_Mobile.png",
+        "flex_align_desktop": "align--middle-center-desktop",
+        "flex_align_mobile": "align--middle-center-mobile",
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "#ffffff",
+        "show_placeholder": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section_double_f9pawt": {
+      "type": "section-double",
+      "blocks": {
+        "subheading_jp8QHV": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "OUR MISSION",
+            "text_size": 3,
+            "padding_bottom": 16
+          }
+        },
+        "heading_AhRKMN": {
+          "type": "heading",
+          "settings": {
+            "title": "Redefining Custom Sports Apparel",
+            "text_size": 6,
+            "padding_bottom": 16
+          }
+        },
+        "text_xRz8iC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Pontoon, our focus is on delivering exceptional custom teamwear, expertly turning your concepts into high-grade apparel. The heart of our operations lies at our Sydney headquarters, where we ensure unparalleled expertise and seamless communication with our collaborators. Our distributed team members offer dedicated support.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "text_E4rxkN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our extensive product line includes both athletic and off-field clothing for Men, Women, and children, ensuring a perfect fit that adheres to Australian sizing norms. This is thanks to our skilled in-house pattern makers who prioritise functionality and fit.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "text_tyVmkf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our supply chain is composed of specialised facilities specifically designed for sports team apparel. These facilities are outfitted with advanced machinery and follow innovative practices to satisfy market needs. We’re committed to ongoing research and development in partnership with industry experts to keep our fabric and garment technology at the forefront. Rigorous quality checks are embedded in our manufacturing process, culminating in a thorough quality assurance review before we ship your order.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        },
+        "text_zXVy7R": {
+          "type": "text",
+          "settings": {
+            "text": "<p>From the initial design to the final delivery and everything in between, we're with you every step of the way. Get in touch to embark on your Custom Teamwear adventure with Pontoon<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "subheading_jp8QHV",
+        "heading_AhRKMN",
+        "text_xRz8iC",
+        "text_E4rxkN",
+        "text_tyVmkf",
+        "text_zXVy7R"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "screen-height-three-quarters",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper",
+        "image_1": "shopify:\/\/shop_images\/Redefining_Custom_Sports_Apparel.png",
+        "image_width": "one-third",
+        "text_alignment": "text-left",
+        "reverse_blocks": true,
+        "bg_color": "",
+        "color": "",
+        "show_placeholder": true,
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_multicolumn_jdjKtK": {
+      "type": "section-multicolumn",
+      "blocks": {
+        "text_pet9MN": {
+          "type": "text",
+          "settings": {
+            "column_width": 33,
+            "title": "Quality",
+            "heading_size": 4,
+            "text": "<p>We embody a steadfast commitment to quality. We Believe in offering our customers garments and accessories that are crafted with meticulous attention to detail, using superior materials and techniques.<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary hero__btn",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "text_PnEHER": {
+          "type": "text",
+          "settings": {
+            "column_width": 33,
+            "title": "Sustainability",
+            "heading_size": 4,
+            "text": "<p>We are deeply dedicated to sustainability. We understand the importance of minimising our environmental impact, and thus, we are moving to be plastic free by mid 2024, and where we can we will convert to recycled fabric.<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary hero__btn",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        },
+        "text_A7iteT": {
+          "type": "text",
+          "settings": {
+            "column_width": 33,
+            "title": "Individuality",
+            "heading_size": 4,
+            "text": "<p>We celebrate and encourage individuality in all its forms. Our collection is thoughtfully curated to reflect diverse styles, enabling customers to find products that resonate with their unique team identities.<\/p>",
+            "text_size": 3,
+            "text_style": "font-body",
+            "button_text": "",
+            "button_url": "",
+            "button_type": "btn--primary hero__btn",
+            "button_style": "btn--solid",
+            "show_arrow": false
+          }
+        }
+      },
+      "block_order": [
+        "text_pet9MN",
+        "text_PnEHER",
+        "text_A7iteT"
+      ],
+      "settings": {
+        "title": "OUR VALUES",
+        "heading_size": 5,
+        "description": "",
+        "align_heading": "text-center",
+        "align_text": "text-center",
+        "align_columns": "flex-align-top",
+        "width": "wrapper",
+        "bg_color": "#f9f9fa",
+        "color": "",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "layout_mobile": "1"
+      }
+    },
+    "section_double_XmUXKA": {
+      "type": "section-double",
+      "blocks": {
+        "heading_nBzJ7k": {
+          "type": "heading",
+          "settings": {
+            "title": "\"",
+            "text_size": 12,
+            "padding_bottom": 0
+          }
+        },
+        "text_dxFr9N": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Our website's aim is to simplify sportswear customisation, making it both easy and fun.With our online design tool, users can quickly choose colours, patterns, and add personallogos or text, speeding up the journeyfrom design to production.<\/strong><\/p>",
+            "text_size": 6,
+            "text_style": "font-heading",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "heading_nBzJ7k",
+        "text_dxFr9N"
+      ],
+      "settings": {
+        "layout": "",
+        "height": "image-height",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper",
+        "image_1": "shopify:\/\/shop_images\/Store.png",
+        "image_width": "one-third",
+        "text_alignment": "text-center",
+        "reverse_blocks": true,
+        "bg_color": "",
+        "color": "",
+        "show_placeholder": true,
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_double_erkM8W": {
+      "type": "section-double",
+      "blocks": {
+        "image_CWEK3W": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Box.png",
+            "image_width": 10,
+            "padding_bottom": 16
+          }
+        },
+        "heading_Txxpdm": {
+          "type": "heading",
+          "settings": {
+            "title": "WORLDWIDE SHIPPING",
+            "text_size": 5,
+            "padding_bottom": 16
+          }
+        },
+        "text_6yq8nQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Shop with us from anywhere in the world and take advantage of our fast and reliable shipping options.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 32
+          }
+        },
+        "image_m8ghNr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Scissor.png",
+            "image_width": 10,
+            "padding_bottom": 16
+          }
+        },
+        "heading_nGw7Ah": {
+          "type": "heading",
+          "settings": {
+            "title": "HIGH-QUALITY MATERIALS",
+            "text_size": 5,
+            "padding_bottom": 16
+          }
+        },
+        "text_7rFWjA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We use the best materials in our sportswear for comfortable and durable products.<\/p>",
+            "text_size": 4,
+            "text_style": "font-body",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "image_CWEK3W",
+        "heading_Txxpdm",
+        "text_6yq8nQ",
+        "image_m8ghNr",
+        "heading_nGw7Ah",
+        "text_7rFWjA"
+      ],
+      "settings": {
+        "layout": "is-reversed",
+        "height": "image-height",
+        "mobile_height": "screen-height-one-half--mobile",
+        "width": "wrapper",
+        "image_1": "shopify:\/\/shop_images\/About_us_image_2.png",
+        "image_width": "one-half",
+        "text_alignment": "text-left",
+        "reverse_blocks": true,
+        "bg_color": "#f9f9fa",
+        "color": "",
+        "show_placeholder": true,
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "section_rich_text_EKmYdC": {
+      "type": "section-rich-text",
+      "blocks": {
+        "heading_exa9Q8": {
+          "type": "heading",
+          "settings": {
+            "title": "STAY IN TOUCH",
+            "text_size": 4,
+            "padding_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading_exa9Q8"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "align_text": "text-left",
+        "overlay_opacity": 0,
+        "overlay_color": "#000",
+        "show_overlay_text": false,
+        "bg_color": "",
+        "color": "",
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "section_rich_text_columns_WmNakM": {
+      "type": "section-rich-text-columns",
+      "blocks": {
+        "text_yaCj8R": {
+          "type": "text",
+          "settings": {
+            "position": "left",
+            "text": "<p>MOMENTS MADE @PONTOONSPORTS<\/p>",
+            "text_size": 6,
+            "text_style": "font-heading",
+            "padding_bottom": 16
+          }
+        },
+        "text_7Te7Br": {
+          "type": "text",
+          "settings": {
+            "position": "right",
+            "text": "<p>GET INSPIRED WITH @PONTOONSPORTS<\/p>",
+            "text_size": 2,
+            "text_style": "font-heading",
+            "padding_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "text_yaCj8R",
+        "text_7Te7Br"
+      ],
+      "settings": {
+        "width": "wrapper",
+        "left_column_width": 60,
+        "right_column_width": 40,
+        "align_text": "text-left",
+        "align_text_mobile": "text-center--mobile",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 18,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_code_46nTpB": {
+      "type": "section-custom-code",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "code": "<div id=\"insta-feed\"><\/div>",
+        "width": "wrapper",
+        "bg_color": "",
+        "color": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_hero_68BLYM",
+    "section_double_f9pawt",
+    "section_multicolumn_jdjKtK",
+    "section_double_XmUXKA",
+    "section_double_erkM8W",
+    "section_rich_text_EKmYdC",
+    "section_rich_text_columns_WmNakM",
+    "section_custom_code_46nTpB"
+  ]
+}
